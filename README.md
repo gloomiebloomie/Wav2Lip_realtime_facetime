@@ -1,3 +1,5 @@
+This is a fork from Wav2lip make a video using coquitts and whisper to simulate an ai facetime with text or speaking to it depending on hardware. First you need data record a 15-30 second wav of you voice in audacity or something then replace it with my iann.wav. For video make 512 by 512 square video of you talking. I will add a script for resizing called resize video just put path of video in script then run it. Also reducing the framerate helps to make the video take way less time.
+
 # **Wav2Lip**: *Accurately Lip-syncing Videos In The Wild* 
 
 ### Wav2Lip is hosted for free at [Sync Labs](https://synclabs.so/)
