@@ -1,0 +1,29 @@
+instructions 
+
+#1. create environment in conda and install requirements
+git clone https://github.com/openai/whisper.git
+conda create --name faceTime python=3.9
+conda activate faceTime
+pip install -r requirements.txt
+pip install opencv-python
+pip install TTS
+pip install -U openai-whisper
+pip install playsound
+pip install sounddevice
+pip install gradio
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+#2. check if gpu is available()
+import torch
+
+# Check if a GPU is available
+if torch.cuda.is_available():
+  print("A GPU is available!")
+else:
+  print("No GPU available.")
+
+
+#3. run gradio in cmd as admin and app in anaconda environment 
+python grad.py
+conda activate faceTime
+python facetimeApp.py --checkpoint_path "wav2lip_gan.pth" --face "ian5sec25fps.mp4" --audio "iann.wav"
